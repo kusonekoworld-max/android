@@ -30,7 +30,7 @@
     <project path="device/xiaomi/creek"
              name="android_device_xiaomi_creek"
              remote="KonekoDev"
-             revision="17" />
+             revision="17-libperfmgr" />
 
     <project path="device/xiaomi/sepolicy"
              name="device_xiaomi_sepolicy"
