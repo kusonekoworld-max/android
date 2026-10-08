@@ -21,9 +21,9 @@
 
     <!-- Kernel -->
     <project path="device/xiaomi/creek-kernel"
-             name="android_kernel_xiaomi_creek"
-             remote="XiaomiCreek"
-             revision="16" />
+             name="device_xiaomi_creek-kernel"
+             remote="KonekoDev"
+             revision="17" />
 
 
     <!-- Device -->
@@ -45,9 +45,9 @@
 
     <!-- Vendor -->
     <project path="vendor/xiaomi/creek"
-             name="android_vendor_xiaomi_creek"
-             remote="XiaomiCreek"
-             revision="lineage-23.2" />
+             name="vendor_xiaomi_creek"
+             remote="KonekoDev"
+             revision="17" />
 
     <project path="vendor"
              name="keys-for-lineage20"
