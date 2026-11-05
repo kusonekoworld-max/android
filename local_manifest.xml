@@ -2,6 +2,10 @@
 <manifest>
 
     <!-- Remotes -->
+    <remote name="Eron-Evan"
+            fetch="https://github.com/Eron-Evan"
+            clone-depth="1" />
+
     <remote name="XiaomiCreek"
             fetch="https://github.com/XiaomiCreek"
             clone-depth="1" />
@@ -105,5 +109,17 @@
              name="packages_apps_FastCharge"
              remote="XiaomiCreek"
              revision="16-qpr2" />
+
+    <!-- Hardware Dolby -->
+    <project path="hardware/dolby"
+             name="hardware_dolby"
+             remote="Eron-Evan"
+             revision="16" />
+
+    <!-- MIUI Camera -->
+    <project path="vendor/xiaomi/creek-miuicamera"
+             name="android_vendor_xiaomi_creek-miuicamera"
+             remote="KonekoDev"
+             revision="main" />
 
 </manifest>
