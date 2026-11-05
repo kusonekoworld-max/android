@@ -18,6 +18,10 @@
             fetch="https://gitlab.com/Saroj-Tajpuriya"
             clone-depth="1" />
 
+    <remote name="Lunaris"
+            fetch="https://github.com/Lunaris"
+            clone-depth="1" />
+
 
     <!-- Kernel -->
     <project path="device/xiaomi/creek-kernel"
@@ -49,6 +53,11 @@
              remote="XiaomiCreek"
              revision="lineage-23.2" />
 
+    <project path="vendor/xiaomi/creek-miuicamera"
+             name="android_vendor_xiaomi_creek-miuicamera"
+             remote="KonekoDev"
+             revision="17" />
+
     <project path="vendor"
              name="keys-for-lineage20"
              remote="saroj-nokia"
@@ -65,6 +74,11 @@
              name="hardware_xiaomi"
              remote="XiaomiCreek"
              revision="bka-no-dolby" />
+
+    <project path="hardware/dolby"
+             name="hardware_dolby"
+             remote="Lunaris"
+             revision="17.0" />
 
     <project path="hardware/qcom-caf/sm6225/audio/agm"
              name="hardware_qcom-caf_sm6225_audio_agm"
