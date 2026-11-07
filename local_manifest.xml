@@ -1,17 +1,10 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
     <!-- Remotes -->
-    <remote name="Eron-Evan"
-            fetch="https://github.com/Eron-Evan"
-            clone-depth="1" />
-
     <remote name="XiaomiCreek"
             fetch="https://github.com/XiaomiCreek"
-            clone-depth="1" />
-
-    <remote name="KonekoDev"
-            fetch="https://github.com/kusonekoworld-max"
             clone-depth="1" />
 
     <remote name="saroj-nokia"
@@ -22,36 +15,46 @@
             fetch="https://gitlab.com/Saroj-Tajpuriya"
             clone-depth="1" />
 
+    <remote name="kusonekoworld-max"
+            fetch="https://github.com/kusonekoworld-max"
+            clone-depth="1" />
+
+    <remote name="crdroidandroid"
+            fetch="https://github.com/crdroidandroid"
+            clone-depth="1" />
+
+    <remote name="KonekoDev"
+            fetch="https://github.com/kusonekoworld-max"
+            clone-depth="1" />
 
     <!-- Kernel -->
     <project path="device/xiaomi/creek-kernel"
-             name="device_xiaomi_creek-kernel"
-             remote="KonekoDev"
-             revision="17" />
-
-
-    <!-- Device -->
-    <project path="device/xiaomi/creek"
-             name="android_device_xiaomi_creek"
-             remote="KonekoDev"
+             name="android_kernel_xiaomi_creek"
+             remote="crdroidandroid"
              revision="17.0" />
 
+    <!-- Device Tree -->
+    <project path="device/xiaomi/creek"
+             name="android_device_xiaomi_creek"
+             remote="crdroidandroid"
+             revision="17.0" />
+
+    <!-- SEPolicy -->
     <project path="device/xiaomi/sepolicy"
              name="device_xiaomi_sepolicy"
-             remote="XiaomiCreek"
-             revision="16" />
+             remote="kusonekoworld-max"
+             revision="creek-v13.1-dolby-fixes" />
 
     <project path="device/qcom/sepolicy_vndr/sm6225"
              name="android_device_qcom_sepolicy_vndr_sm6225"
              remote="XiaomiCreek"
              revision="16-qpr2" />
 
-
     <!-- Vendor -->
     <project path="vendor/xiaomi/creek"
-             name="vendor_xiaomi_creek"
-             remote="KonekoDev"
-             revision="17" />
+             name="android_vendor_xiaomi_creek"
+             remote="kusonekoworld-max"
+             revision="16" />
 
     <project path="vendor"
              name="keys-for-lineage20"
@@ -63,12 +66,23 @@
              remote="Saroj-Tajpuriya"
              revision="baklava" />
 
+    <!-- MIUI Camera -->
+    <project path="vendor/xiaomi/creek-miuicamera"
+             name="android_vendor_xiaomi_creek-miuicamera"
+             remote="KonekoDev"
+             revision="main" />
 
     <!-- Hardware -->
     <project path="hardware/xiaomi"
              name="hardware_xiaomi"
              remote="XiaomiCreek"
              revision="bka-no-dolby" />
+
+    <!-- Dolby -->
+    <project path="hardware/dolby"
+             name="hardware_dolby"
+             remote="kusonekoworld-max"
+             revision="creek-v13.1-dolby-fixes" />
 
     <project path="hardware/qcom-caf/sm6225/audio/agm"
              name="hardware_qcom-caf_sm6225_audio_agm"
@@ -109,17 +123,5 @@
              name="packages_apps_FastCharge"
              remote="XiaomiCreek"
              revision="16-qpr2" />
-
-    <!-- Hardware Dolby -->
-    <project path="hardware/dolby"
-             name="hardware_dolby"
-             remote="Eron-Evan"
-             revision="16" />
-
-    <!-- MIUI Camera -->
-    <project path="vendor/xiaomi/creek-miuicamera"
-             name="android_vendor_xiaomi_creek-miuicamera"
-             remote="KonekoDev"
-             revision="main" />
 
 </manifest>
