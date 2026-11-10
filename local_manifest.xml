@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
@@ -52,9 +51,9 @@
 
     <!-- Vendor -->
     <project path="vendor/xiaomi/creek"
-             name="android_vendor_xiaomi_creek"
+             name="vendor_xiaomi_creek"
              remote="kusonekoworld-max"
-             revision="16" />
+             revision="17" />
 
     <project path="vendor"
              name="keys-for-lineage20"
@@ -75,14 +74,14 @@
     <!-- Hardware -->
     <project path="hardware/xiaomi"
              name="hardware_xiaomi"
-             remote="XiaomiCreek"
-             revision="bka-no-dolby" />
+             remote="kusonekoworld-max"
+             revision="17.0" />
 
     <!-- Dolby -->
     <project path="hardware/dolby"
              name="hardware_dolby"
              remote="kusonekoworld-max"
-             revision="creek-v13.1-dolby-fixes" />
+             revision="17.0" />
 
     <project path="hardware/qcom-caf/sm6225/audio/agm"
              name="hardware_qcom-caf_sm6225_audio_agm"
