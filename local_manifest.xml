@@ -22,13 +22,6 @@
             fetch="https://github.com/crdroidandroid"
             clone-depth="1" />
 
-    <remote name="KonekoDev"
-            fetch="https://github.com/kusonekoworld-max"
-            clone-depth="1" />
-
-    <remote name="swiitch-OFF-Lab"
-            fetch="https://github.com/swiitch-OFF-Lab"
-            clone-depth="1" />
 
     <!-- Kernel -->
     <project path="device/xiaomi/creek-kernel"
@@ -84,8 +77,8 @@
     <!-- Dolby -->
     <project path="hardware/dolby"
              name="hardware_dolby"
-             remote="swiitch-OFF-Lab"
-             revision="sony-A17" />
+             remote="kusonekoworld-max"
+             revision="dolby-sony-creek" />
 
     <project path="hardware/qcom-caf/sm6225/audio/agm"
              name="hardware_qcom-caf_sm6225_audio_agm"
