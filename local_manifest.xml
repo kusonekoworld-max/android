@@ -62,12 +62,6 @@
              remote="Saroj-Tajpuriya"
              revision="baklava" />
 
-    <!-- MIUI Camera -->
-    <project path="vendor/xiaomi/creek-miuicamera"
-             name="android_vendor_xiaomi_creek-miuicamera"
-             remote="KonekoDev"
-             revision="main" />
-
     <!-- Hardware -->
     <project path="hardware/xiaomi"
              name="hardware_xiaomi"
